@@ -1,10 +1,12 @@
 :root {
   --main-font-family: "Roboto", sans-serif;
-  --headers-font-family: "Hind", sans-serif;
+  --secondary-font-family: "Hind", sans-serif;
   --primary-color: #35a8e0;
   --light-text-color: #ffffff;
   --dark-text-color: #2f2f2f;
   --dark-secondary-text-color: #565e66;
+  --border-color: #d4dbe0;
+  --icon-bg-color: #f4f7f9;
 }
 
 * {
@@ -28,25 +30,36 @@ select {
 .competences {
   display: flex;
   justify-content: center;
-  position: relative;
 }
 
 .competences .gearwheel {
-  border: 2px solid #d4dbe0;
+  border: 2px solid var(--border-color);
   border-radius: 50%;
-  padding: 80px;
+  padding: 60px;
 }
 
 .competences p {
-  color: black;
+  color: var(--light-text-color);
   font-family: var(--main-font-family);
   font-size: 14px;
   font-weight: bold;
   position: absolute;
+  top: 285px;
 }
 
 .competences-icons-list {
+  display: flex;
+  justify-content: center;
   list-style: none;
+  margin-top: 150px;
+  margin-bottom: 200px;
+  padding: 0;
+  position: relative;
+}
+
+.competences-icons-list .icon {
+  position: absolute;
+  top: 255px;
 }
 
 .contact-section-bg {
@@ -66,7 +79,7 @@ select {
 
 .contact-section h2 {
   color: var(--light-text-color);
-  font-family: var(--headers-font-family);
+  font-family: var(--secondary-font-family);
   font-size: 29px;
   margin-bottom: 15px;
   text-align: center;
@@ -92,13 +105,68 @@ select {
   width: 260px !important;
 }
 
-.main-section {
-  height: 800px;
+.icon {
+  background-color: var(--icon-bg-color);
+  border: 3px solid var(--border-color);
+  border-radius: 50%;
+  height: 80px;
+  position: relative;
+  width: 80px;
+}
+
+.icon-label {
+  color: var(--dark-text-color);
+  font-family: var(--secondary-font-family);
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+}
+
+.icon-label.bottom {
+  top: 100%;
+  margin-top: 20px;
+}
+
+.icon-label.horizontal {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  top: 0;
+}
+
+.icon-label.left {
+  right: 100%;
+  margin-right: 20px;
+}
+
+.icon-label.right {
+  left: 100%;
+  margin-left: 20px;
+}
+
+.icon-label.top {
+  top: -45px;
+}
+
+.icon-label.vertical {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.icon img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
 }
 
 .main-section h1 {
   color: var(--dark-text-color);
-  font-family: var(--headers-font-family);
+  font-family: var(--secondary-font-family);
   font-size: 36px;
   margin-bottom: 20px;
   margin-top: 40px;
@@ -110,6 +178,7 @@ select {
   font-family: var(--main-font-family);
   font-size: 16px;
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .message-input {
@@ -147,6 +216,6 @@ select {
 }
 
 .terms-checkbox span {
-  color: var(--contact-section-text-color);
+  color: var(--light-text-color);
   font-size: 12px;
 }
