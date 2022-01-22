@@ -2,3 +2,9 @@
   margin: 0;
   padding: 0;
 }
+
+.contact-section {
+  background-image: url("/images/bg-contact-section.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
