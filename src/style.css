@@ -2,7 +2,9 @@
   --main-font-family: "Roboto", sans-serif;
   --headers-font-family: "Hind", sans-serif;
   --primary-color: #35a8e0;
-  --contact-section-text-color: #ffffff;
+  --light-text-color: #ffffff;
+  --dark-text-color: #2f2f2f;
+  --dark-secondary-text-color: #565e66;
 }
 
 * {
@@ -23,6 +25,30 @@ select {
   position: relative;
 }
 
+.competences {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.competences .gearwheel {
+  border: 2px solid #d4dbe0;
+  border-radius: 50%;
+  padding: 80px;
+}
+
+.competences p {
+  color: black;
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+}
+
+.competences-icons-list {
+  list-style: none;
+}
+
 .contact-section-bg {
   background-image: url("/images/bg-contact-section.png");
   background-repeat: no-repeat;
@@ -39,7 +65,7 @@ select {
 }
 
 .contact-section h2 {
-  color: var(--contact-section-text-color);
+  color: var(--light-text-color);
   font-family: var(--headers-font-family);
   font-size: 29px;
   margin-bottom: 15px;
@@ -47,7 +73,7 @@ select {
 }
 
 .contact-section p {
-  color: var(--contact-section-text-color);
+  color: var(--light-text-color);
   font-family: var(--main-font-family);
   font-size: 14px;
   font-weight: 400;
@@ -64,6 +90,26 @@ select {
   height: 45px;
   margin: 6px !important;
   width: 260px !important;
+}
+
+.main-section {
+  height: 800px;
+}
+
+.main-section h1 {
+  color: var(--dark-text-color);
+  font-family: var(--headers-font-family);
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.main-section h2 {
+  color: var(--dark-secondary-text-color);
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  text-align: center;
 }
 
 .message-input {
@@ -86,7 +132,7 @@ select {
   background-color: var(--primary-color);
   border: 1px solid transparent;
   border-radius: 6px;
-  color: var(--contact-section-text-color);
+  color: var(--light-text-color);
   display: block;
   font-family: var(--main-font-family);
   font-size: 13px;
