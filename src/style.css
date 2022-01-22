@@ -1,10 +1,106 @@
+:root {
+  --main-font-family: "Roboto", sans-serif;
+  --headers-font-family: "Hind", sans-serif;
+  --primary-color: #35a8e0;
+  --contact-section-text-color: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-.contact-section {
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(/images/down_arrow.svg) white no-repeat calc(100% - 15px);
+  background-size: 12px;
+  color: #757575;
+}
+
+.arrow-icon {
+  position: relative;
+}
+
+.contact-section-bg {
   background-image: url("/images/bg-contact-section.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
+}
+
+.contact-section {
+  padding: 35px 0 30px 0;
+}
+
+.contact-section a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.contact-section h2 {
+  color: var(--contact-section-text-color);
+  font-family: var(--headers-font-family);
+  font-size: 29px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contact-section p {
+  color: var(--contact-section-text-color);
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.col-4,
+select {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-family: var(--main-font-family) !important;
+  font-size: 14px !important;
+  height: 45px;
+  margin: 6px !important;
+  width: 260px !important;
+}
+
+.message-input {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-family: var(--main-font-family) !important;
+  font-size: 14px;
+  height: 110px;
+  margin: 6px;
+  margin-bottom: 15px;
+  width: 805px;
+}
+
+.message-input::placeholder {
+  position: absolute;
+  padding: 12px 12px;
+}
+
+.submit-button {
+  background-color: var(--primary-color);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  color: var(--contact-section-text-color);
+  display: block;
+  font-family: var(--main-font-family);
+  font-size: 13px;
+  height: 45px;
+  margin: 15px auto 0px auto;
+  width: 160px;
+}
+
+.terms-checkbox input {
+  margin: 2px 5px;
+  transform: scale(1.2);
+}
+
+.terms-checkbox span {
+  color: var(--contact-section-text-color);
+  font-size: 12px;
 }
