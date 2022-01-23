@@ -26,7 +26,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(images/down_arrow.svg) white no-repeat calc(100% - 15px);
+  background: url(/images/down_arrow.svg) white no-repeat calc(100% - 15px);
   background-size: 12px;
   color: #757575;
 }
@@ -71,7 +71,7 @@ select {
 }
 
 .contact-section-bg {
-  background-image: url("images/bg-contact-section.png");
+  background-image: url("/images/bg-contact-section.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -130,38 +130,6 @@ select {
   position: absolute;
   top: 0;
   white-space: nowrap;
-}
-
-.icon-label.bottom {
-  top: 100%;
-  margin-top: 20px;
-}
-
-.icon-label.horizontal {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  top: 0;
-}
-
-.icon-label.left {
-  right: 100%;
-  margin-right: 20px;
-}
-
-.icon-label.right {
-  left: 100%;
-  margin-left: 20px;
-}
-
-.icon-label.top {
-  top: -45px;
-}
-
-.icon-label.vertical {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .icon img {
@@ -228,9 +196,38 @@ select {
   font-size: 12px;
 }
 
+@media (min-width: 960px) {
+  .icon-label.bottom {
+    top: 100%;
+    margin-top: 20px;
+  }
+  .icon-label.horizontal {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+  }
+  .icon-label.left {
+    right: 100%;
+    margin-right: 20px;
+  }
+  .icon-label.right {
+    left: 100%;
+    margin-left: 20px;
+  }
+  .icon-label.top {
+    top: -45px;
+  }
+  .icon-label.vertical {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 767px) {
   .contact-section-bg {
-    background-image: url("images/bg-reversed.png");
+    background-image: url("/images/bg-reversed.png");
     background-repeat: no-repeat;
     background-size: 100%;
   }
@@ -251,42 +248,24 @@ select {
   .competences-icons-list .icon {
     position: static;
   }
-  .competences-icons-list .icon img {
-    display: flex;
-    height: 50px;
-    justify-content: center;
-    margin-bottom: 5px !important;
-    margin-top: 5px !important;
-    padding: 5px !important;
-  }
   .icon {
     background-color: transparent;
     border: none;
-    height: auto;
+    height: 100%;
     position: static;
     transform: none !important;
+    width: 100%;
+  }
+  .icon img {
+    height: 80px;
+    margin: 5px;
   }
   .icon-label {
-    width: 200px;
+    font-size: 15px;
+    margin: 5px !important;
+    position: static;
+    text-align: center;
     white-space: normal;
-  }
-  .icon-label.bottom,
-  .icon-label.left,
-  .icon-label.right,
-  .icon-label.top {
-    font-size: 12px;
-    left: 100%;
-    margin-left: 5px;
-    right: auto;
-    top: 0;
-  }
-  .icon-label.horizontal,
-  .icon-label.vertical {
-    align-items: center;
-    height: 50px;
-    justify-content: flex-start;
-    margin: 0;
-    width: 200px;
   }
   .main-section h1 {
     font-size: 23px;
@@ -305,4 +284,64 @@ select {
     margin: 0 auto;
     width: 285px;
   }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .contact-section-bg {
+    background-image: url("/images/bg-reversed.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .competences .gearwheel {
+    width: 60%;
+  }
+  .competences-icons-list {
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  .competences-icons-list .icon {
+    top: 140px;
+  }
+  .competences p {
+    font-size: 8px;
+    top: 170px;
+  }
+  .icon-label {
+    font-size: 12px;
+    white-space: normal;
+  }
+  .icon-label.bottom {
+    top: 100%;
+    margin-top: 10px;
+  }
+  .icon-label.horizontal {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+  }
+  .icon-label.left {
+    right: 100%;
+    margin-right: 10px;
+  }
+  .icon-label.right {
+    left: 100%;
+    margin-left: 10px;
+  }
+  .icon-label.top {
+    top: -35px;
+  }
+  .icon-label.vertical {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .main-section h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .small-input,
+  .message-input,
+  select {
+    width: 370px !important;
 }
