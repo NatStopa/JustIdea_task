@@ -71,7 +71,7 @@ select {
 }
 
 .contact-section-bg {
-  background-image: url("/images/bg-contact-section.png");
+  background-image: url("/JustIdea_task/images/bg-contact-section.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -230,7 +230,7 @@ select {
 
 @media (max-width: 767px) {
   .contact-section-bg {
-    background-image: url("/images/bg-reversed.png");
+    background-image: url("/JustIdea_task/images/bg-reversed.png");
     background-repeat: no-repeat;
     background-size: 100%;
   }
