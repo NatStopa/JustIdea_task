@@ -26,7 +26,8 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(/images/down_arrow.svg) white no-repeat calc(100% - 15px);
+  background: url(JustIdea_task/images/down_arrow.svg) white no-repeat
+    calc(100% - 15px);
   background-size: 12px;
   color: #757575;
 }
