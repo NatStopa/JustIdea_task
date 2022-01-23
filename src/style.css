@@ -26,8 +26,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url(/JustIdea_task/images/down_arrow.svg) white no-repeat
-    calc(100% - 15px);
+  background: url(images/down_arrow.svg) white no-repeat calc(100% - 15px);
   background-size: 12px;
   color: #757575;
 }
@@ -72,7 +71,7 @@ select {
 }
 
 .contact-section-bg {
-  background-image: url("/JustIdea_task/images/bg-contact-section.png");
+  background-image: url("images/bg-contact-section.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -231,7 +230,7 @@ select {
 
 @media (max-width: 767px) {
   .contact-section-bg {
-    background-image: url("/JustIdea_task/images/bg-reversed.png");
+    background-image: url("images/bg-reversed.png");
     background-repeat: no-repeat;
     background-size: 100%;
   }
