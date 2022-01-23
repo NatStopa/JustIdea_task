@@ -14,6 +14,14 @@
   padding: 0;
 }
 
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -94,7 +102,7 @@ select {
   text-align: center;
 }
 
-.col-4,
+.small-input,
 select {
   border: 1px solid transparent;
   border-radius: 6px;
@@ -218,4 +226,83 @@ select {
 .terms-checkbox span {
   color: var(--light-text-color);
   font-size: 12px;
+}
+
+@media (max-width: 767px) {
+  .contact-section-bg {
+    background-image: url("/images/bg-reversed.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .competences p {
+    font-size: 9px;
+    top: 290px;
+  }
+  .competences .gearwheel {
+    border: 1px solid transparent;
+    max-width: 80%;
+    padding: 0;
+  }
+  .competences-icons-list {
+    display: list-item;
+    margin: 30px auto;
+    position: static;
+  }
+  .competences-icons-list .icon {
+    position: static;
+  }
+  .competences-icons-list .icon img {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+    padding: 5px !important;
+  }
+  .icon {
+    background-color: transparent;
+    border: none;
+    height: auto;
+    position: static;
+    transform: none !important;
+  }
+  .icon-label {
+    width: 200px;
+    white-space: normal;
+  }
+  .icon-label.bottom,
+  .icon-label.left,
+  .icon-label.right,
+  .icon-label.top {
+    font-size: 12px;
+    left: 100%;
+    margin-left: 5px;
+    right: auto;
+    top: 0;
+  }
+  .icon-label.horizontal,
+  .icon-label.vertical {
+    align-items: center;
+    height: 50px;
+    justify-content: flex-start;
+    margin: 0;
+    width: 200px;
+  }
+  .main-section h1 {
+    font-size: 23px;
+  }
+  .main-section h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .small-input,
+  .message-input,
+  select {
+    width: 285px !important;
+  }
+  .terms-checkbox {
+    display: block;
+    margin: 0 auto;
+    width: 285px;
+  }
 }
