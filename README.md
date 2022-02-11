@@ -25,6 +25,7 @@ Page made as a recruitment task from Adobe XD file.
 * In main section: gearwheel with competences of a company. 
 * You can add new icon to gearwheel without changing positions of other icons (JavaScript function).
 * In contact section: contact form.
+* Fully responsive.
 
 ## Project status
 Project is: _no longer being worked on_ 
