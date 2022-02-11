@@ -73,6 +73,7 @@ select {
 .contact-section-bg {
   background-image: url("/images/bg-contact-section.png");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: 100%;
 }
 
@@ -184,6 +185,11 @@ select {
   height: 45px;
   margin: 15px auto 0px auto;
   width: 160px;
+  transition: all ease-in-out 300ms;
+}
+
+.submit-button:hover {
+  background-color: #35a7e094;
 }
 
 .terms-checkbox input {
@@ -191,7 +197,7 @@ select {
   transform: scale(1.2);
 }
 
-.terms-checkbox span {
+.terms-checkbox label {
   color: var(--light-text-color);
   font-size: 12px;
 }
@@ -225,73 +231,60 @@ select {
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 990px) and (max-width: 1500px) {
+  .contact-section-bg {
+    background-image: url("/images/bg-contact-section.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
   .contact-section-bg {
     background-image: url("/images/bg-reversed.png");
+    background-position: center 25%;
     background-repeat: no-repeat;
     background-size: 100%;
-  }
-  .competences p {
-    font-size: 9px;
-    top: 290px;
-  }
-  .competences .gearwheel {
-    border: 1px solid transparent;
-    max-width: 80%;
-    padding: 0;
-  }
-  .competences-icons-list {
-    display: list-item;
-    margin: 30px auto;
-    position: static;
-  }
-  .competences-icons-list .icon {
-    position: static;
-  }
-  .icon {
-    background-color: transparent;
-    border: none;
-    height: 100%;
-    position: static;
-    transform: none !important;
-    width: 100%;
-  }
-  .icon img {
-    height: 80px;
-    margin: 5px;
-  }
-  .icon-label {
-    font-size: 15px;
-    margin: 5px !important;
-    position: static;
-    text-align: center;
-    white-space: normal;
-  }
-  .main-section h1 {
-    font-size: 23px;
-  }
-  .main-section h2 {
-    font-size: 15px;
-    margin-bottom: 10px;
   }
   .small-input,
   .message-input,
   select {
-    width: 285px !important;
-  }
-  .terms-checkbox {
-    display: block;
-    margin: 0 auto;
-    width: 285px;
+    width: 370px !important;
   }
 }
 
-@media (min-width: 768px) and (max-width: 959px) {
-  .contact-section-bg {
-    background-image: url("/images/bg-reversed.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
+@media (min-width: 550px) and (max-width: 767px) {
+  .competences .gearwheel {
+    border: none;
+    padding: 0;
+    width: 470px;
   }
+  .competences p {
+    font-size: 12px;
+    top: 380px;
+  }
+  .main-section h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 549px) {
+  .competences .gearwheel {
+    border: none;
+    padding: 0;
+    width: 300px;
+  }
+  .competences p {
+    font-size: 9px;
+    top: 295px;
+  }
+  .main-section h2 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
   .competences .gearwheel {
     width: 60%;
   }
@@ -340,8 +333,57 @@ select {
     font-size: 15px;
     margin-bottom: 10px;
   }
+}
+
+@media (max-width: 767px) {
+  .contact-section-bg {
+    background-image: url("/images/bg-reversed.png");
+    background-position: center 0%;
+    background-repeat: no-repeat;
+    background-size: 120%;
+  }
+  .competences-icons-list {
+    display: list-item;
+    margin: 30px auto;
+    position: static;
+  }
+  .competences-icons-list .icon {
+    position: static;
+  }
+  .icon {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+    position: static;
+    transform: none !important;
+    width: 100%;
+  }
+  .icon img {
+    height: 80px;
+    margin: 5px;
+    width: 98%;
+  }
+  .icon-label {
+    font-size: 15px;
+    margin: 5px !important;
+    position: static;
+    text-align: center;
+    white-space: normal;
+  }
+  .main-section h1 {
+    font-size: 23px;
+  }
+  .main-section h2 {
+    margin-bottom: 10px;
+  }
   .small-input,
   .message-input,
   select {
-    width: 370px !important;
+    width: 285px !important;
+  }
+  .terms-checkbox {
+    display: block;
+    margin: 0 auto;
+    width: 285px;
+  }
 }
